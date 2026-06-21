@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://durai-portfolio.example.com/sitemap.xml

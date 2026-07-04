@@ -24,6 +24,24 @@ app.include_router(chat_routes.router, prefix=settings.api_v1_prefix)
 app.include_router(lead_routes.router, prefix=settings.api_v1_prefix)
 
 
+def run_migrations():
+    from alembic.config import Config
+    from alembic import command
+    alembic_cfg = Config("alembic.ini")
+    command.upgrade(alembic_cfg, "head")
+
+
+@app.on_event("startup")
+async def startup_event():
+    try:
+        import asyncio
+        loop = asyncio.get_event_loop()
+        await loop.run_in_executor(None, run_migrations)
+        print("✅ Migrations ran successfully")
+    except Exception as e:
+        print(f"⚠️ Migration error: {e}")
+
+
 @app.get("/")
 async def root():
     return {

@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     notify_email: str = "mmasanadurai007@gmail.com"
 
     # CORS
-    allowed_origins: str = "http://localhost:3000,http://localhost:5173"
+    allowed_origins: str = "http://localhost:3000,http://localhost:5173,https://durai-freelancer.vercel.app,https://durai-portfolio.onrender.com"
 
     # WhatsApp
     whatsapp_number: str = "919361977522"

@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import { X, Send, Loader2, Sparkles } from "lucide-react";
+import { X, Send } from "lucide-react";
 import { CHAT_STARTERS } from "../data/content";
 import { sendChatMessage } from "../lib/api";
 import { useSessionId } from "../hooks/useSessionId";

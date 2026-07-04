@@ -6,13 +6,13 @@ import Skills from "./components/Skills";
 import Services from "./components/Services";
 import Works from "./components/Works";
 import Experience from "./components/Experience";
-import Writing from "./components/Writing";
+// import Writing from "./components/Writing";
 import Contact from "./components/Contact";
 import ChatAgent from "./components/ChatAgent";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
 import BackgroundTexture from "./components/BackgroundTexture";
-import { PROFILE } from "./data/content";
+// import { PROFILE } from "./data/content";
 
 function App() {
   return (

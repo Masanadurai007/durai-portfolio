@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ArrowRight, Github, Linkedin } from "lucide-react";
-import { PROFILE, STATS_INLINE } from "../data/content";
+import { PROFILE } from "../data/content";
 
 export default function Hero() {
   const [roleIdx, setRoleIdx] = useState(0);
